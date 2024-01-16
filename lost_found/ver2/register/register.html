@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>Easy_Find_register</head> <!-- web의 이름 -->
+    <body> <!-- main part of web paige -->
+        <h1>register Form</h1>
+        <br> <!-- '\n' function -->
+        <hr> <!-- horizental line -->
+
+        
+        <!-- 'p': paragraph command-->
+        <!-- 'i': italic체로 문자 변환하는  command-->
+        <p>please, answer the question below</p> 
+        <br><br>
+
+        <form action="file:///C:/Users/jangs/lostnfound/lost_found/ver2/home/index.html">
+            <!--input_type: https://www.w3schools.com/html/html_form_input_types.asp-->
+            <!--질문 1: 등록 유형(분실 or 습득), type: radio--> 
+            <label for = "select Type">1. Register type:  </label>
+            <input type="radio" id="Lost" name="select_Type" value="Lost">
+            <label for="Lost">Lost</label>
+            <input type="radio" id="Find" name="select_Type" value="Find">
+            <label for="Find">Find</label><br><br>
+
+            <!--질문 2: 물건 유형, type: text--> 
+            <label for="item_type">2. item_Name: </label>
+            <input type="text" id="item_type" name="item_type"><br><br> 
+            
+            <!--질문 3: 장소, type: text--> 
+            <!--이미지 map기능을 활용하여 학교 지도를 클릭하여 분실 장소 추가하는 idea-->
+            <!--trial 1, 이미지에 마우스 터치 유효하게 하는 경우-->
+            <!--https://www.w3schools.com/html/html_images_imagemap.asp-->
+            <!--https://www.image-map.net/-->
+            <!--https://chat.openai.com/c/e643e385-4f81-4b97-9b65-d27fe8a1f1e2-->
+            
+            <!--trial 2, 이미지에 radio버튼 삽입하는 방법-->
+            <!--image radio: https://stackoverflow.com/questions/54235413/place-radio-buttons-over-image-->
+            <!--https://www.quora.com/How-do-you-position-an-image-in-HTML-->
+            <!--https://chat.openai.com/share/416dd28c-6f76-4eef-b137-a5082612c1b3-->
+
+            <!--trial 3, datalist를 활용하는 방법-->
+            <!--solution for location list -->
+            <!--datalist활용방법, https://www.w3schools.com/tags/tag_datalist.asp-->
+            <!--index labeling, https://chat.openai.com/share/416dd28c-6f76-4eef-b137-a5082612c1b3-->
+            <label for="locate">3. select_Locate: </label>
+            <input list="locations" name="location" id="location">
+            <datalist id = "locations">
+                <option value="1. HDH: Hyundong Hall"></option>
+                <option value="2. NMH: Nehemiah Hall"></option>
+                <option value="3. NTH: Newton Hall"></option>
+                <option value="4. OH: Oseok Hall"></option>
+                <option value="5. ANH: All Nations Hall"></option>
+                <option value="6. SU: Student Union"></option>
+                <option value="7. GLC: Global Language Hall"></option>
+                <option value="8. Welfare Building"></option>
+                <option value="9. Hyoam Chapel"></option>
+                <option value="10. Chapel Annex"></option>
+                <option value="11. Pyeongbong Field"></option>
+                <option value="12. Hiddink Field"></option>
+                <option value="13. Basketball Court"></option>
+                <option value="14. Tennis Court"></option>
+                <option value="15. Vislon Hall"></option>
+                <option value="16. Creation Hall"></option>
+                <option value="17. Bethel Hall"></option>
+                <option value="18. Lothem Hall"></option>
+                <option value="19. I-House"></option>
+                <option value="20. Grace Hall"></option>
+                <option value="21. Ha Yong-jo Hall"></option>
+                <option value="22. International Faculty House1"></option>
+                <option value="23. International Faculty House9"></option>
+                <option value="24. Handong International School"></option>
+                <option value="25. Power Plant"></option>
+                <option value="26. Guest House"></option>
+            </datalist>
+            <img src="school2.png" alt="Locate" usemap="#locate" width="450" height="379">
+
+            
+            <br><br>
+
+            <!--질문 4: 날짜, type: date--> 
+            <!--https://www.w3schools.com/tags/att_input_type_date.asp-->
+            <label for="date_time">4. Date: </label>
+            <input type="date" id="date_time" name="date_time"><br><br>
+            
+            <!--질문 5: 물건 상세 설명(색상), type: color--> 
+            <!--https://www.w3schools.com/tags/att_input_type_color.asp-->
+            <label for="item_color">5. Select item color:</label>
+            <input type="color" id="item_color" name="item_color" value="#ff0000"><br><br>
+
+            <!--질문 6: 물건 상세 설명(추가 설명), type: text--> 
+            <label for="item_description">6. description: </label>
+            <input type="text" id="item_description" name="item_description"><br><br> 
+            
+            <input type="button" value="Submit">
+            <!--submit(정상적으로 등록됨 paige), home으로 돌아가기-->
+        </form>
+
+        <!-- 'em': 'i'처럼 이탤릭체로 표시되지만, 강조 시각화를 위한 command-->
+        <!-- difference between <i>, <em>: https://chat.openai.com/share/8ae9b65d-6125-4a9d-b529-14c136ff4b1b -->>
+        
+    </body>
+</html>

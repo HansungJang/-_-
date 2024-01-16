@@ -1,0 +1,23 @@
+.icons
+{
+    
+}
+
+.icons a{
+    background-image: url("icons.png");
+    /*이미지 활용을 위해서 이미지 크기 조절이 필요했음*/
+    width: 30px; 
+    height: 30px; 
+    display: inline-block; /*icon 가로 배치*/ 
+    /*<a> tag 글자 출력이 보이지 않도록하는 것, image replacement 기법*/
+    text-indent: -9999px;
+
+    
+}
+
+/*issue 이미지 전환이 이루어지지 않음 */
+.icons a.email      { background-position: left top;}
+.icons a.tel        { background-position: center top;}
+.icons a.Linkedin   { background-position: right top;}
+
+

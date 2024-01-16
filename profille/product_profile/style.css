@@ -1,0 +1,35 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    color: hsl(228, saturation, lightness);
+    /*
+    새로 알게된 문법 #3
+    hsl : (색상, 투명도, 밝기)
+    https://www.w3schools.com/colors/colors_hsl.asp
+    */
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin: 8px;
+}
+
+div{
+    display: block;
+}
+
+.grid{
+    width: auto;
+    max-width: 650px;
+    place-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10em auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+@media(max-width: 750px){
+    .grid{
+        max-width: 350px;
+        display: block;
+        margin: 3em auto;
+    }
+}

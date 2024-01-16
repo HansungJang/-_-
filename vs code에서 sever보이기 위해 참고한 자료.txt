@@ -1,0 +1,16 @@
+23.12.18.(DAY 1) 
+
+#(html, css, JS extension)
+https://youtu.be/dAI21EfRv6Y?si=VQqK_bgSxYI7Eo_v
+
+
+#(Live-server 사용 방법)ip server 
+https://docs.sysout.co.kr/etc/vscode/live-server-error
+https://www.tp-link.com/kr/support/faq/838/
+https://velog.io/@joajoa/VSCode-Live-Server-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+
+
+#(source code)
+https://chat.openai.com/share/e693e6de-d133-48ed-b881-eef2934eaf52
+
+>> html, css, javascript 가 먼지 모르지만 일단 웹 으로 된 보이는 무언가를 이번(Easy_Find)프로젝트를 집으로 돌아가기전에 무언가 만들어야 된다고 생각이 들어서 일단 'web 개발' , 'web template활용', 'css, html 활용', 'gpt활용 web만들어보기' 순으로 자료를 찾다보니 진행이 되었고 끝에는 Vs code를 활용하여 chatGPT를 활용하여 간단하게 '분실물 조회' 버튼이 있는 web페이지를 적용및 보일수 있게 설정해 보았다. 

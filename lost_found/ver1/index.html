@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HGU Easy_Find</title>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <h1>insert Lost item_name</h1>
+
+    <!-- 분실물 조회 폼 -->
+    <h2>search form</h2>
+    <form action="/search" method="post">
+        <label for="item-name">stuff_name:</label>
+        <input type="text" id="item-name" name="item-name" required>
+        <button type="submit">search</button>
+    </form>
+
+    <!-- 분실물 등록 폼 -->
+    <h2>Register form</h2>
+    <form action="/submit" method="post">
+        <label for="lost-item">stuff_name:</label>
+        <input type="text" id="lost-item" name="lost-item" required>
+        <label for="location">lost_location:</label>
+        <input type="text" id="location" name="location" required>
+        <label for="description">specific_info:</label>
+        <textarea id="description" name="description" required></textarea>
+        <button type="submit">register</button>
+    </form>
+
+    <!-- 출처 -->
+    <h2>source code from chatGPT: user Jang, Hansung</h2>
+
+    <!-- 분실물 목록 또는 검색 결과 표시 -->
+    <h2>result item list</h2>
+    <ul>
+        <!-- 여기에 동적으로 생성되는 목록이 들어갈 수 있습니다. -->
+        <li>item1: location1</li>
+        <li>item2: location2</li>
+        <!-- 추가적인 항목들 -->
+    </ul>
+</body>
+</html>
